@@ -1,0 +1,37 @@
+.outer-container {
+	
+	left: 0px;
+	right: 0px;
+	margin: auto;
+
+	.contacts-page {
+		font-size: 30px;
+		color: red;
+		text-align: center;
+	}
+	.search-box {
+		width: 100px;
+		
+	}
+	.profile{
+			}
+	.profile-each-item{
+		width:120px;
+		height:155px;
+		display:inline-block;
+		border:1px solid black;
+		padding:10px;
+		margin: 10px;
+		vertical-align: top;
+		img{
+			width:100px;
+		}
+		.profile-name{
+			font-size:12px;
+			font-weight:bold;
+			text-align: center;
+				
+		}
+	}
+	
+}

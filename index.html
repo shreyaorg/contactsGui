@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html ng-app="myApp">
+	<head>
+		<link rel="stylesheet" href="css/contacts.css"/>
+		<script src="contacts.min.js"></script>
+	</head>
+	<body ng-controller="myCtrl">
+		<div class="outer-container">
+			<div class="contacts-page">Contacts page</div>
+			<div class="row">
+				<div class="col-xs-2 col-sm-4">
+					<input type="text" placeholder="search for anyone" class="search-box">
+					<div ng-click="gotoPage('/friends')" class="friends">Friends</div>
+					<div ng-click="gotoPage('/relatives')" class="relatives">Relatives</div>
+					<div ng-click="gotoPage('/work')" class="work">Work</div>
+				</div>
+				<div class="col-xs-10 col-sm-8">
+					<div ng-view></div>
+				</div>
+			</div>
+		</div>
+	</body>
+</html>

@@ -1,0 +1,26 @@
+.outer-container {
+  left: 0px;
+  right: 0px;
+  margin: auto; }
+  .outer-container .contacts-page {
+    font-size: 30px;
+    color: red;
+    text-align: center; }
+  .outer-container .search-box {
+    width: 100px; }
+  .outer-container .profile-each-item {
+    width: 120px;
+    height: 155px;
+    display: inline-block;
+    border: 1px solid black;
+    padding: 10px;
+    margin: 10px;
+    vertical-align: top; }
+    .outer-container .profile-each-item img {
+      width: 100px; }
+    .outer-container .profile-each-item .profile-name {
+      font-size: 12px;
+      font-weight: bold;
+      text-align: center; }
+
+/*# sourceMappingURL=layout.css.map */
