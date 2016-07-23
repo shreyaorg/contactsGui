@@ -1,3 +1,7 @@
+/**
+ * This is our projects build file
+ *
+ */
 module.exports = function(grunt) {
 	grunt.initConfig({
 		pkg: grunt.file.readJSON("package.json"),
