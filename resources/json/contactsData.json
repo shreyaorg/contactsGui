@@ -1,0 +1,25 @@
+{
+	"contacts": [{
+		"img": "images/saiphoto.jpg",
+		"name": "sai",
+		"emailsList": [{
+			"type": "home",
+			"email": "saidubbaka@gmail.com"
+		}, {
+			"type": "work",
+			"email": "sainarsi@verizon.com"
+		}]
+	},{
+		"img": "images/luckyphoto.jpg",
+		"name": "lucky",
+		"emailsList": [{
+			"type": "home",
+			"email": "praveen@gmail.com"
+		}, {
+			"type": "work",
+			"email": "lucky@gmail.com"
+		}]
+	}]
+
+
+}

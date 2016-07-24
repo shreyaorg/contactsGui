@@ -7,18 +7,40 @@
 	</head>
 	<body ng-controller="myCtrl">
 		<div class="outer-container">
-			<div class="contacts-page">Contacts page</div>
-			<div class="row">
-				<div class="col-xs-2 col-sm-4">
-					<input type="text" placeholder="search for anyone" class="search-box">
-					<div ng-click="gotoPage('/friends')" class="friends">Friends</div>
-					<div ng-click="gotoPage('/relatives')" class="relatives">Relatives</div>
-					<div ng-click="gotoPage('/work')" class="work">Work</div>
+			<div class="top-header">
+				<img src="http://mobilemarketingwatch.com/wp-content/uploads/2016/01/Is-Google-Searching-for-the-Next-Big-Thing1.jpg"/>
+				<div class="search-box">
+					<input class="search-input" place-holder="seach here" type="text"/>
+					<img src="http://www.freeiconspng.com/uploads/search-icon-png-25.png"/>
 				</div>
-				<div class="col-xs-10 col-sm-8">
-					<div ng-view></div>
+				<div class="blue-box">
+					<div class="blue-box-content">Contacts</div>
 				</div>
 			</div>
+			<div class="bottom-container">
+				<div class="bottom-container-left-box">
+					<img src="images/swethaphoto.jpg"/>
+					<a href="">Swetha Sangepu</a>
+					<div ng-click="allContactsFn()">All contacts</div>
+					<div>Frequently Contacted</div>
+					<div class="groups">
+						Groups
+						<img src="https://cdn4.iconfinder.com/data/icons/ionicons/512/icon-ios7-arrow-right-128.png"/>
+					</div>
+					<div>Circles</div>
+					<div>Find Duplicates</div>
+					<div class="more">
+						<span>More</span>
+						<img src="https://cdn4.iconfinder.com/data/icons/ionicons/512/icon-ios7-arrow-right-128.png"/>
+					</div>
+					<div class="allContacts" ng-repeat="contact in contacts">
+						<img ng-src="{{contact.img}}"/>
+						<div class="profile-name" ng-click="gotoPage('/contacts')">{{contact.name}}</div>
+						<div class="email">{{contact.emailsList[0].email}}</div>
+					</div>
+				</div>
+			</div>
+			<div ng-view></div>
 		</div>
 	</body>
 </html>
