@@ -11,5 +11,5 @@ myApp.config(['$routeProvider', '$locationProvider',function($routeProvider, $lo
 	});
 	$locationProvider.html5Mode(false).hashPrefix("!");
 }]).run(['$log',function($log) {
-	$log.log("App started!");
+	$log.log("App started now2!");
 }]);

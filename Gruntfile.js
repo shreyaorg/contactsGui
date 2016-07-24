@@ -49,6 +49,24 @@ module.exports = function(grunt) {
 				}
 			}
 		},
+		watch: {
+			options: {
+				spawn: false,
+				livereload: true
+			},
+			scripts: {
+				files: ['src/**/*.js'],
+				tasks: ['jshint', 'concat:jsFiles']
+			},
+			cssFiles: {
+				files: ['sass/**/*.scss'],
+				tasks: ['sass', 'concat:cssFiles']
+			},
+			resources: {
+				files: ['resources/**', 'index.html', 'fonts/**', 'templates/**/*.html', 'images/**'],
+				tasks: ['copy']
+			}
+		},
 		copy: {
 			build: {
 				files: [{
@@ -59,7 +77,7 @@ module.exports = function(grunt) {
 			}
 		}
 	});
-
+	grunt.loadNpmTasks('grunt-contrib-watch');
 	grunt.loadNpmTasks('grunt-contrib-jshint');
 	grunt.loadNpmTasks('grunt-contrib-concat');
 	grunt.loadNpmTasks('grunt-contrib-clean');
