@@ -38,7 +38,26 @@
     .bottom-container .bottom-container-left-box img {
       width: 25%;
       padding: 5px; }
-    .bottom-container .bottom-container-left-box .group img {
-      width: 20%; }
+    .bottom-container .bottom-container-left-box .all-contacts {
+      padding: 10px; }
+    .bottom-container .bottom-container-left-box .circles {
+      padding: 10px; }
+      .bottom-container .bottom-container-left-box .circles img {
+        width: 15%;
+        float: right; }
+    .bottom-container .bottom-container-left-box .find-dublicates {
+      padding: 10px; }
+    .bottom-container .bottom-container-left-box .frequently {
+      padding: 10px; }
+    .bottom-container .bottom-container-left-box .groups {
+      padding: 10px; }
+      .bottom-container .bottom-container-left-box .groups img {
+        width: 15%;
+        float: right; }
+    .bottom-container .bottom-container-left-box .more {
+      padding: 10px; }
+      .bottom-container .bottom-container-left-box .more img {
+        width: 15%;
+        float: right; }
 
 /*# sourceMappingURL=layout.css.map */

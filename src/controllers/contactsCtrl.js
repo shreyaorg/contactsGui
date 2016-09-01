@@ -1,3 +1,3 @@
-myApp.controller("contactsCtrl", ['$scope',"ContactData", function($scope ,ContactData) {
+myApp.controller("contactsCtrl", ['$scope',"$routeParams", function($scope ,$routeParams) {
 	$scope.contact= ContactData;
 }]);

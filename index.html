@@ -21,17 +21,27 @@
 				<div class="bottom-container-left-box">
 					<img src="images/swethaphoto.jpg"/>
 					<a href="">Swetha Sangepu</a>
-					<div ng-click="allContactsFn()">All contacts</div>
-					<div>Frequently Contacted</div>
+					<div class="all-contacts" ng-click="allContactsFn()">All contacts</div>
+					<div class="frequently">Frequently Contacted</div>
 					<div class="groups">
-						Groups
-						<img src="https://cdn4.iconfinder.com/data/icons/ionicons/512/icon-ios7-arrow-right-128.png"/>
+						<span>Groups</span>
+						<img ng-click="groupShowFn()" src="https://cdn4.iconfinder.com/data/icons/ionicons/512/icon-ios7-arrow-right-128.png"/>
+						<div ng-if="groupShow">New Group</div>
 					</div>
-					<div>Circles</div>
-					<div>Find Duplicates</div>
+					<div class="circles">
+						Circles
+						<img ng-click="circlesShowFn()" src="https://cdn4.iconfinder.com/data/icons/ionicons/512/icon-ios7-arrow-right-128.png"/>
+						<div ng-if="circlesShow">
+							<div>Friends</div>
+							<div>Family</div>
+							<div>Aquaintances</div>
+							<div>Following</div>
+						</div>
+					</div>
+					<div class="find-dublicates">Find Duplicates</div>
 					<div class="more">
 						<span>More</span>
-						<img src="https://cdn4.iconfinder.com/data/icons/ionicons/512/icon-ios7-arrow-right-128.png"/>
+						<img ng-click="moreShowFn()" src="https://cdn4.iconfinder.com/data/icons/ionicons/512/icon-ios7-arrow-right-128.png"/>
 					</div>
 					<div class="allContacts" ng-repeat="contact in contacts">
 						<img ng-src="{{contact.img}}"/>
