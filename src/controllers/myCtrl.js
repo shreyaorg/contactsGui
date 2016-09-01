@@ -3,7 +3,7 @@ myApp.controller("myCtrl", ['$scope', "$http", "$location", "RestService", funct
 		RestService.getContacts().then(function(data) {
 			$scope.contacts = data.contacts;	
 		}, function(error) {
-			//error callback
+			
 		});
 	};
 	$scope.gotoPage = function(pagePath) {
