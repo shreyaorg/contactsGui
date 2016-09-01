@@ -1,8 +1,9 @@
 /**
  * This is our projects build file
- *
+ * this is grunt file
  */
 module.exports = function(grunt) {
+	//this is second comment
 	grunt.initConfig({
 		pkg: grunt.file.readJSON("package.json"),
 		jshint: {
