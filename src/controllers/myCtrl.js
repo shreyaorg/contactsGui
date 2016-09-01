@@ -1,11 +1,5 @@
 myApp.controller("myCtrl", ['$scope', "$http", "$location", "RestService", function($scope, $http, $location, RestService) {
 	$scope.allContactsFn = function() {
-		// $http({
-		// 	method: "get",
-		// 	url: "resources/json/contactsData.json",
-		// }).success(function(data) {
-		// 	$scope.contacts = data.contacts;
-		// });
 		RestService.getContacts().then(function(data) {
 			$scope.contacts = data.contacts;	
 		}, function(error) {
