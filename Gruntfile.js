@@ -1,6 +1,6 @@
 /**
  * This is our projects build file
- *
+ * this is grunt file
  */
 module.exports = function(grunt) {
 	grunt.initConfig({
